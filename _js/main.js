@@ -15,15 +15,19 @@
 	}
 
 	populate = function(){
-		var li,
+		var li, item,
 			i = 0;
 
 		b.update();
 		for(; i < b.saved.length; i++){
+			item = b.saved[i]
 			$('<li />').html(b.saved[i].name + '<span>$'+b.saved[i].price+'</span>').attr({
 				'data-number' : i
 			}).appendTo(entries).bind('click', function(e){
-				//show details screen here
+				//show some details here
+				var lon = item.location.longitude,
+					lat = item.location.latitude;
+				alert(lon + '-' + lat);
 			});
 		}
 	};
