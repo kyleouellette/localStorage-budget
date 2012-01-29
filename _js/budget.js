@@ -43,17 +43,19 @@
 				'name' : name,
 				'price' : price,
 				'date' : new Date().getTime(),
-				'location' : (function(){
-					return (window.navigator.geolocation.getCurrentPosition(function(e){
-						return e.coords;
-					}) || '')
-				})()
-			};
+				'location' : ""
+			},
+			that = this;
 
-		 this.entries.push(en);
-		 if(this['auto save']){
-		 	this.save();
-		 }
+			window.navigator.geolocation.getCurrentPosition(function(e){
+				en.location = e.coords;
+
+				that.entries.push(en);
+				 if(that['auto save']){
+				 	that.save();
+				 }
+				return;
+			}
 		 return en;
 	};
 
