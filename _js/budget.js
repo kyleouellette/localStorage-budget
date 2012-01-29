@@ -54,6 +54,9 @@
 				if(that['auto save']){
 					that.save();
 				}
+
+				//call the populate function defined in main.js
+				populate ? populate() : console.log('-- no populate --');
 			});
 
 		 return en

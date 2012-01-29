@@ -32,6 +32,8 @@
 		}
 	};
 
+	window.populate = populate;
+
 	populate();
 
 	$('#create').bind('submit', function(){
