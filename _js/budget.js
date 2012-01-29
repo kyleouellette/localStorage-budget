@@ -38,7 +38,7 @@
 
 	//returns an object
 	//optionally auto saves
-	budget.create = function(name, price){
+	budget.create = function(name, price, cb){
 		var en = {
 				'name' : name,
 				'price' : price,
@@ -55,8 +55,8 @@
 					that.save();
 				}
 
-				//call the populate function defined in main.js
-				populate ? populate() : console.log('-- no populate --');
+				//callback
+				cb();
 			});
 
 		 return en

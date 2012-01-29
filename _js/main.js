@@ -32,8 +32,6 @@
 		}
 	};
 
-	window.populate = populate;
-
 	populate();
 
 	$('#create').bind('submit', function(){
@@ -43,8 +41,9 @@
 		entries.children().fadeOut().remove();
 
 		show_form();
-		b.create(c[0].value,c[1].value);
-		populate();
+		
+		b.create(c[0].value,c[1].value, populate);
+
 		for(var i = 0; i < c.length; i++){
 			c[i].value = '';
 		}
