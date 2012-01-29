@@ -25,6 +25,8 @@
 		var t = $(this),
 			c = t.children();
 
+		$(this).parent().slideToggle();
+
 		b.create(c[0].value,c[1].value);
 		
 		populate();
@@ -39,6 +41,11 @@
 	$('h3').bind('click', function(){
 		$('#add-form').slideToggle();
 	});
+
+	//delete method from the url
+	if(window.location.search.match(/delete/ig)){
+		b.delete(0, b.saved.length);
+	}
 
 
 
