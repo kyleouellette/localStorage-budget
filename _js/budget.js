@@ -49,14 +49,14 @@
 
 			window.navigator.geolocation.getCurrentPosition(function(e){
 				en.location = e.coords;
-
 				that.entries.push(en);
-				 if(that['auto save']){
-				 	that.save();
-				 }
-				return;
-			}
-		 return en;
+				
+				if(that['auto save']){
+					that.save();
+				}
+			});
+
+		 return en
 	};
 
 	//does the saving
