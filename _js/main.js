@@ -26,7 +26,15 @@
 			}).appendTo(entries).bind('click', function(e){
 				//show some details here
 				var lon = item.location.longitude,
-					lat = item.location.latitude;
+					lat = item.location.latitude,
+					//lat first
+					//http://maps.googleapis.com/maps/api/staticmap?center=51.477222,0&zoom=14&size=400x400&sensor=false
+					str = "http://maps.googleapis.com/maps/api/staticmap?center="+ lat +","+lon+"&zoom=14&size=400x400&sensor=false";
+
+					$('<img />').attr({
+						'src' : str
+					}).appendTo('body');
+
 				alert(lon + '-' + lat);
 			});
 		}
