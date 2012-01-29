@@ -2,8 +2,17 @@
 	
 	var console = window.console || {'log' : function(a){return a}},
 		entries = $('#entries ul'),
-		populate;
-	console.log(b);
+		populate, show_form, is_showing = false;
+	
+	show_form = function(){
+		if(is_showing){
+			$('#add-form').fadeOut();
+		}else{
+			$('#add-form').fadeIn();
+		}
+		is_showing = !is_showing;
+		return;
+	}
 
 	populate = function(){
 		var li,
@@ -14,7 +23,7 @@
 			$('<li />').html(b.saved[i].name + '<span>$'+b.saved[i].price+'</span>').attr({
 				'data-number' : i
 			}).appendTo(entries).bind('click', function(e){
-				console.log($(this).attr('data-number'));
+				//show details screen here
 			});
 		}
 	};
@@ -24,23 +33,20 @@
 	$('#create').bind('submit', function(){
 		var t = $(this),
 			c = t.children();
-
-		$(this).parent().slideToggle();
-
-		b.create(c[0].value,c[1].value);
 		
-		populate();
+		entries.children().fadeOut().remove();
 
+		show_form();
+		b.create(c[0].value,c[1].value);
+		populate();
 		for(var i = 0; i < c.length; i++){
 			c[i].value = '';
 		}
-
 		return false;
 	});
 
-	$('h3').bind('click', function(){
-		$('#add-form').slideToggle();
-	});
+	$('.toggle').bind('click', show_form);
+
 
 	//delete method from the url
 	if(window.location.search.match(/delete/ig)){

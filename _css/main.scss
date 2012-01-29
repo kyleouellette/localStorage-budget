@@ -44,6 +44,22 @@ div#add-form{
 			padding:4px;
 			font-size:1em;
 		}
+		button{
+			background-color:rgb(242,242,242);
+			padding:4px 6px;
+			border:1px solid #bbb;
+			border-radius:4px;
+		}
+	}
+
+	p{
+		padding:5px;
+		background-color:#ccc;
+		color:#999;
+		border:1px solid #999;
+		border-left:0px;
+		float:left;
+		margin:-10px 0px 5px;
 	}
 }
 

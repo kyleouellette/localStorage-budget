@@ -70,6 +70,8 @@
 		if(this.type === 'localStorage'){
 			localStorage.setItem(this.name, JSON.stringify(this.saved));
 		}else{}
+
+		this.entries = [];
 		return;
 	};
 
