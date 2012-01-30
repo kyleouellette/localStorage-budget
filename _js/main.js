@@ -19,6 +19,7 @@
 			i = 0;
 
 		b.update();
+		b.saved.reverse();
 		for(; i < b.saved.length; i++){
 			item = b.saved[i]
 			$('<li />').html(b.saved[i].name + '<span>$'+b.saved[i].price+'</span>').attr({
