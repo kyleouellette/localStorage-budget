@@ -69,4 +69,5 @@ div#add-form {
     #entries ul li span {
       float: right; }
     #entries ul li span.light-grey {
-      float: none; }
+      float: none;
+      color: #ccc; }

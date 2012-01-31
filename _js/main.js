@@ -24,7 +24,7 @@
 			var d = new Date(b.saved[i].date);
 			item = b.saved[i]
 
-			$('<li />').html('<span class="light-grey">'(d.getMonth()+1) + '/' + d.getDate() + '/' + d.getFullYear() + '</span> ' +b.saved[i].name + '<span>$'+b.saved[i].price+'</span>').attr({
+			$('<li />').html('<span class="light-grey">' + (d.getMonth()+1) + '/' + d.getDate() + '/' + d.getFullYear() + '</span> ' +b.saved[i].name + '<span>$'+b.saved[i].price+'</span>').attr({
 				'data-number' : i
 			}).appendTo(entries).bind('click', function(e){
 				//show some details here
