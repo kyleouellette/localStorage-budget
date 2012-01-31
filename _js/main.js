@@ -21,24 +21,26 @@
 		b.update();
 		b.saved.reverse();
 		for(; i < b.saved.length; i++){
-			var d = new Date(b.saved[i].date);
+			var d = new Date(b.saved[i].date),
+				d_out = (d.getMonth()+1) + '/' + d.getDate() + '/' + d.getFullYear();
 			item = b.saved[i]
 
-			$('<li />').html('<span class="light-grey">' + (d.getMonth()+1) + '/' + d.getDate() + '/' + d.getFullYear() + '</span> ' +b.saved[i].name + '<span>$'+b.saved[i].price+'</span>').attr({
+			$('<li />').html('<span class="light-grey">' + d_out +'</span> ' +b.saved[i].name + '<span>$'+b.saved[i].price+'</span>').attr({
 				'data-number' : i
 			}).appendTo(entries).bind('click', function(e){
 				//show some details here
-				var lon = item.location.longitude,
+				var item = b.saved[$(this).attr('data-number')],
+					lon = item.location.longitude,
 					lat = item.location.latitude,
-					//lat first
-					//http://maps.googleapis.com/maps/api/staticmap?center=51.477222,0&zoom=14&size=400x400&sensor=false
-					str = "http://maps.googleapis.com/maps/api/staticmap?center="+ lat +","+lon+"&zoom=14&size=400x400&sensor=false";
+					str = "http://maps.googleapis.com/maps/api/staticmap?center="+ lat +","+lon+"&zoom=14&size=400x400&sensor=false",
+					details = $('.details');
 
-					$('<img />').attr({
-						'src' : str
-					}).appendTo('body');
 
-				alert(lon + '-' + lat);
+					details.children().find('.title').html('Title: ' + item.name);
+					details.children().find('.date').html('Date: ' + d_out);
+					details.children().find('.price').html('Price: ' + item.price);
+					details.children().find('.map').children().attr({'src' : str});
+				//alert(lon + '-' + lat);
 			});
 		}
 	};
@@ -66,6 +68,7 @@
 
 	//delete method from the url
 	if(window.location.search.match(/delete/ig)){
+
 		b.delete(0, b.saved.length);
 	}
 

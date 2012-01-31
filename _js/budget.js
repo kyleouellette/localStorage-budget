@@ -3,6 +3,7 @@
 		budget = {
 			'version' : '1.0.1',
 			'name' : 'budget',
+			'location' : false,
 			'auto save' : true,
 			'entries' : []
 		},
@@ -47,17 +48,25 @@
 			},
 			that = this;
 
-			window.navigator.geolocation.getCurrentPosition(function(e){
-				en.location = e.coords;
+			if(this.location){
+				window.navigator.geolocation.getCurrentPosition(function(e){
+					en.location = e.coords;
+					that.entries.push(en);
+					
+					if(that['auto save']){
+						that.save();
+					}
+					//callback
+					cb();
+				});
+			}else{
 				that.entries.push(en);
-				
 				if(that['auto save']){
 					that.save();
 				}
-
-				//callback
 				cb();
-			});
+			}
+			
 
 		 return en
 	};
