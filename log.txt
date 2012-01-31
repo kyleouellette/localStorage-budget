@@ -1,0 +1,134 @@
+commit 20a6e164a4f818bf9f5c9e8d6416b3fe4a1fbdc8
+Author: Kyle Ouellette <kouellette@boston.com>
+Date:   Tue Jan 31 15:35:02 2012 -0500
+
+    added css and git ignore
+
+commit a586e5c5c829bb0ac282b783f6d47b8abf83c335
+Author: Kyle Ouellette <kouellette@boston.com>
+Date:   Tue Jan 31 15:28:06 2012 -0500
+
+    ability to turn on and off auto location.
+    Added div for details
+
+commit 2f6ac5fa01c305c0beb75498d685e0224106ef2f
+Author: Kyle Ouellette <kouellette@boston.com>
+Date:   Tue Jan 31 11:28:19 2012 -0500
+
+    new instead of add
+
+commit 8e2c2f3f8e9152682c71eb81ec4ba2fd6bdbbd7f
+Author: Kyle Ouellette <kouellette@boston.com>
+Date:   Tue Jan 31 11:27:17 2012 -0500
+
+    updated updater
+
+commit 054d488c7c358f0f29fac3e14763007d34de052d
+Author: Kyle Ouellette <kouellette@boston.com>
+Date:   Tue Jan 31 11:26:36 2012 -0500
+
+    updated title
+
+commit 3d2d2aa2f33c252ecd7949612de151e438334244
+Author: Kyle Ouellette <kouellette@boston.com>
+Date:   Tue Jan 31 11:25:25 2012 -0500
+
+    added updater
+
+commit 44c528d6ec4d1cd8457d81684a90da69ccabc5b4
+Author: Kyle Ouellette <kouellette@boston.com>
+Date:   Tue Jan 31 11:00:54 2012 -0500
+
+    updataed css
+
+commit 6dd8fda7cc56ccad9bb3c7cd9e613358502d2fc6
+Author: Kyle Ouellette <kouellette@boston.com>
+Date:   Tue Jan 31 10:57:20 2012 -0500
+
+    updated css/scss and fixed for dumb error in Main.js
+
+commit d8418e861f62a0439387d1bceac8cc75b7d5b2e7
+Author: Kyle Ouellette <kouellette@boston.com>
+Date:   Tue Jan 31 10:54:56 2012 -0500
+
+    Added date
+
+commit 57ab72b1a6ca5e956506df231e4910783c25ff85
+Author: kyle <kyle@kyle-o.info>
+Date:   Mon Jan 30 11:12:10 2012 -0500
+
+    corrected ordering issueswq
+
+commit 309c474a57a438ea75bbd906c5637c4e7298d722
+Author: Kyle <kouellette20@gmail.com>
+Date:   Sat Jan 28 23:33:23 2012 -0500
+
+    added map appendage
+
+commit 1ec803adf7a411908d9022c1eaa27d617653100b
+Author: Kyle <kouellette20@gmail.com>
+Date:   Sat Jan 28 23:21:14 2012 -0500
+
+    ok I think I got it this time
+
+commit 9d29071fe2dc5953f1d5a4995cde904bce3d6c92
+Author: Kyle <kouellette20@gmail.com>
+Date:   Sat Jan 28 23:14:40 2012 -0500
+
+    testing callback on location
+
+commit 780611157c16e780098c1a7700573f1c26d67abe
+Author: Kyle <kouellette20@gmail.com>
+Date:   Sat Jan 28 23:09:20 2012 -0500
+
+    Dumb error
+
+commit bb9e4e6844ebb021371206d47a0ee0cea7e67b74
+Author: Kyle <kouellette20@gmail.com>
+Date:   Sat Jan 28 23:06:11 2012 -0500
+
+    fix for location on entry
+
+commit c9e84b95c35712da2dbf13d17eefe40f08dd317b
+Author: Kyle <kouellette20@gmail.com>
+Date:   Sat Jan 28 23:00:10 2012 -0500
+
+    added test for click and location on items[C
+
+commit 3bbf495458865d993eb2dc521fc19a9ddf09b446
+Author: Kyle <kouellette20@gmail.com>
+Date:   Sat Jan 28 22:45:47 2012 -0500
+
+    Fixes for :
+    - adding multiple entries.
+    - removed entries and reappending issues
+
+commit b16fb1e5369689bb46cd21d2ad1d4c019f23e410
+Author: Kyle <kouellette20@gmail.com>
+Date:   Sat Jan 28 20:54:53 2012 -0500
+
+    form auto close on submit
+
+commit 8be77acac2a060da7dd5b23ad50bb3b776cc242b
+Author: Kyle <kouellette20@gmail.com>
+Date:   Sat Jan 28 20:45:39 2012 -0500
+
+    added meta tag
+
+commit d437cbcc605713065c9f607d1827140071cfe24e
+Author: Kyle <kouellette20@gmail.com>
+Date:   Sat Jan 28 20:40:03 2012 -0500
+
+    added style and more functionality. Still needs a lot but hey, it's progress
+
+commit e3eb364205d484f6e61199fc563fcfcfa78d5d68
+Author: Kyle <kouellette20@gmail.com>
+Date:   Sat Jan 28 20:10:40 2012 -0500
+
+    added readme
+
+commit bc5ef11dc0f70435b1260ea434cd8ab133785f0b
+Author: Kyle <kouellette20@gmail.com>
+Date:   Sat Jan 28 20:03:46 2012 -0500
+
+    Initial commit

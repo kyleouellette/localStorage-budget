@@ -57,7 +57,8 @@ div#add-form {
 #entries ul {
   clear: both;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  width: 100%; }
   #entries ul li {
     margin: 3px 0px;
     padding: 10px;
@@ -71,3 +72,13 @@ div#add-form {
     #entries ul li span.light-grey {
       float: none;
       color: #999; }
+
+.details {
+  display: block; }
+  .details ul {
+    margin: 0;
+    padding: 0; }
+    .details ul li {
+      list-style: none;
+      margin: 0px;
+      padding: 9px; }
